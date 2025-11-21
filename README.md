@@ -1,7 +1,7 @@
 # RHEA_Crypt
 Lorenz Fingerprint Sealed File Encryption
 
-# 🛡️ RHEA_Crypt v5.1.4 — GUI Edition
+# 🛡️ RHEA_Crypt v5.1.6 — GUI Edition
 
 RHEA_Crypt is a hardened, entropy-driven, glyph-integrated encryption and decryption utility powered by the RHEA-UCM (Recursive Homeostatic Evolutionary Algorithm — Universal Cell Model) framework.
 
@@ -10,7 +10,6 @@ This edition includes:
 - Lorenz Attractor-based entropy key derivation
 - Symbolic Epoch-Glyph authentication
 - AAD-integrated AES-GCM sealing
-- Long-path & UNC compatibility
 - Epochal anti-replay hardening
 - CUDA/Torch acceleration (if available)
 - Passphrase Extension Layer (PASS-EXT)
@@ -69,7 +68,7 @@ Atomic write logic is used for decrypted outputs.
 
 ## 🛠️ Build with Nuitka (Recommended)
 ```bash
-nuitka RHEA_Crypt-gui.py --onefile --output-dir=dist --remove-output --enable-plugin=tk-inter --windows-disable-console --include-package=torch --include-package=Crypto --include-package=tkinterdnd2 --include-data-dir=assets=assets --no-pyi-file --lto=yes --show-progress --jobs=20
+nuitka --onefile --standalone --windows-console-mode=disable --enable-plugin=tk-inter --module-parameter=torch-disable-jit=no --windows-icon-from-ico="C:\Users\south\source\repos\RHEA_Crypt\assets\icons\security_center.ico" --follow-imports --jobs=16 RHEA_Crypt-gui.py
 ```
 
 ---
