@@ -68,7 +68,7 @@ Atomic write logic is used for decrypted outputs.
 
 ## 🛠️ Build with Nuitka (Recommended)
 ```bash
-nuitka --onefile --standalone --windows-console-mode=disable --enable-plugin=tk-inter --module-parameter=torch-disable-jit=no --windows-icon-from-ico="C:\Users\south\source\repos\RHEA_Crypt\assets\icons\security_center.ico" --follow-imports --jobs=16 RHEA_Crypt-gui.py
+nuitka --onefile --standalone --windows-console-mode=disable --enable-plugin=tk-inter --module-parameter=torch-disable-jit=no --windows-icon-from-ico="Insert Icon File Path" --follow-imports --jobs=16 RHEA_Crypt-gui.py
 ```
 
 ---
