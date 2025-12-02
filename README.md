@@ -1,3 +1,7 @@
+<h3 align="center">
+  <b>Zadeian Labs</b><br>
+  <sub>Sovereign Order of Enigmatic Republics</sub>
+</h3>
 # RHEA_Crypt
 Lorenz Fingerprint Sealed File Encryption
 
